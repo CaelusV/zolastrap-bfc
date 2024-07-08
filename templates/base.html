@@ -190,7 +190,7 @@
     <main class="container mx-auto my-5">
       {% block breadcrumb %}
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb rounded-0">
+          <ol class="breadcrumb">
             {% for ancestor in p_or_s.ancestors %}
             {% set s = get_section(path=ancestor) %}
             <li class="breadcrumb-item"><a href="{{ s.permalink }}">{{ s.title }}</a></li>
